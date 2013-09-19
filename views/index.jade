@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  canvas#trails(width="800", height="500")
+  #data
+    label XPostion
+    input.xpostion
+    label XVelocity
+    input.xVelocity
+    label Y Velocity
+    input.yVelocity
+
+    label Angle(Degrees)
+    input.clockwiseDegrees
+    br  
+    label Altitude(m)
+    input.altitude
+    label Battery(%)
+    input.batteryRemaining
+    label State
+    input.controlState
